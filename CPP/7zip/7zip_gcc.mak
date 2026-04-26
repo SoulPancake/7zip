@@ -161,7 +161,6 @@ DEL_OBJ_EXE = -$(RM) $(PROGPATH) $(PROGPATH_STATIC) $(OBJS)
 
 # LOCAL_LIBS=-lpthread
 # LOCAL_LIBS_DLL=$(LOCAL_LIBS) -ldl
-LIB2 = -lpthread
 # On OpenBSD, the dlopen() family of functions is built directly into libc,
 # so the -ldl flag is not required and would cause a linker error.
 ifeq ($(shell uname 2>/dev/null),OpenBSD)
